@@ -3,8 +3,8 @@ services:
     image: mysql:8
     container_name: mysql-db
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: hospital
+      MYSQL_ROOT_PASSWORD: docker
+      MYSQL_DATABASE: klustudentdb
     ports:
       - "3307:3306"
     volumes:
@@ -39,3 +39,5 @@ volumes:
 
 networks:
   springboot-mysql-net:
+
+
